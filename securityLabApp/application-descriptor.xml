@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<application id="com_ibm_securityLabApp" platformVersion="7.1.0.00.20151107-1647" xmlns="http://www.worklight.com/application-descriptor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <displayName>securityLabApp</displayName>
+    <description>An Ionic Framework and Cordova project.</description>
+    <author>
+        <name>Ionic Framework Team</name>
+        <email>hi@ionicframework</email>
+        <copyright>Copyright My Company</copyright>
+        <homepage>http://ionicframework.com/</homepage>
+    </author>
+    <mainFile>index.html</mainFile>
+    <thumbnailImage>www/img/thumbnail.png</thumbnailImage>
+    <accessTokenExpiration>3600</accessTokenExpiration>
+    <userIdentityRealms />
+    <licenseAppType>APPLICATION</licenseAppType>
+    <targetCategory>UNDEFINED</targetCategory>
+    <iphone bundleId="com.ibm.securityLabApp" version="1.0.0">
+        <worklightSettings include="false" />
+        <security>
+            <encryptWebResources enabled="false" />
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
+        </security>
+    </iphone>
+</application>

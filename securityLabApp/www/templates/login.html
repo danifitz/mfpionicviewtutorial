@@ -1,0 +1,18 @@
+<ion-view view-title="HR Directory: Login">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+
+    <ion-content>
+      <form class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Username" ng-model="username" />
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Password" ng-model="password" />
+        </label>
+        <button class="button button-positive button-block" ng-click="login(username, password)">Login</button>
+        <p ng-show="displayError">{{errorMessage}}</p>
+      </form>
+    </ion-content>
+
+</ion-view>

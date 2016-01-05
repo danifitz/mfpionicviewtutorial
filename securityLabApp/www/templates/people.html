@@ -1,0 +1,27 @@
+<ion-view view-title="HR Directory: People" hide-back-button="true">
+  <ion-nav-buttons side="secondary">
+    <button class="button button-assertive" ng-click="logout()">
+      <i class="icon ion-help-circled"></i>Logout
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+
+  <ion-content>
+    <div class="card" ng-repeat="person in people">
+      <div class="item item-divider">
+        <i class="icon {{evaluateGender(person.user.gender)}}"></i> &nbsp;&nbsp;{{formatName(person.user)}}
+      </div>
+      <div class="item">
+        <img src="{{person.user.picture.thumbnail}}" />
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-information"></i>
+        <p>Email: {{person.user.email}}</p>
+        <p>Phone: {{person.user.cell}}</p>
+        <p>Address: {{person.user.location.street}}, {{person.user.location.city}}, {{person.user.location.state}}</p>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
